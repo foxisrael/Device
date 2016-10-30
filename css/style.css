@@ -173,8 +173,37 @@ a{
   margin-bottom: 20px;
 }
 
+.btn-white{
+  width: 260px;
+  border-top: 16px #fff solid;
+  border-bottom: 16px #fff solid;
+}
+
 .btn:hover{
+  width: 160px;
+  background: #ffcc33;
+  border-top: 16px #ffcc33 solid;
+  border-bottom: 16px #ffcc33 solid;
+  color: #000;
+}
+
+.btn-white:hover{
+  width: 260px;
+  border-top: 16px #ffcc33 solid;
+  border-bottom: 16px #ffcc33 solid;
+  color: #000;
+}
+
+.btn:active{
   width: 280px;
+  background: #000;
+  border-top: 16px #000 solid;
+  border-bottom: 16px #000 solid;
+  color: #ffcc99;
+}
+
+.btn-white:active{
+  width: 260px;
   background: #000;
   border-top: 16px #000 solid;
   border-bottom: 16px #000 solid;
@@ -252,16 +281,32 @@ a{
   background: url("../img/logo-dji.jpg");
 }
 
+.logo-dji:hover{
+  background: url("../img/logo-dji-hover.jpg");
+}
+
 .logo-spgadgets{
   background: url("../img/logo-spgadgets.jpg");
+}
+
+.logo-spgadgets:hover{
+  background: url("../img/logo-spgadgets-hover.jpg");
 }
 
 .logo-gopro{
   background: url("../img/logo-gopro.jpg");
 }
 
+.logo-gopro:hover{
+  background: url("../img/logo-gopro-hover.jpg");
+}
+
 .logo-vive{
   background: url("../img/logo-vive.jpg");
+}
+
+.logo-vive:hover{
+  background: url("../img/logo-vive-hover.jpg");
 }
 
 .about-contacts{
