@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "gilroyextrabold";
+  src:
+      local("gilroyextrabold"),
+      url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "gilroylight";
+  src:
+      local("gilroylight"),
+      url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "opensans";
+  src:
+      local("opensans"),
+      url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "opensanslight";
+  src:
+      local("opensanslight"),
+      url("../fonts/opensanslight.woff") format("woff");
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h1{
+  font-family: "gilroyextrabold";
+  font-size: 48px;
+  color: #000;
+}
+
+h2{
+  font-family: "gilroyextrabold";
+  font-size: 47px;
+  color: #000;
+}
+
+h3{
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  color: #000;
+}
+
+p{
+  font-family: "opensanslight";
+  font-size: 15px;
+  color: #333;
+}
+
+a{
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popular{
+  margin-bottom: 100px;
+}
+
+.popular-item{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 35px;
+}
+
+.popular-item:last-child{
+  margin-right: 0;
+}
+
+.popular-item-1,
+.popular-item-2,
+.popular-item-3,
+.popular-item-4,
+.popular-item-5,
+.popular-item-6{
+  width: 160px;
+  height: 160px;
+}
+
+.popular-item-1{
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-1.svg") no-repeat;
+  background-position: center;
+}
+
+.popular-item-2{
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-2.svg") no-repeat;
+  background-position: center bottom;
+}
+
+.popular-item-3{
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-3.svg") no-repeat;
+  background-position: center;
+}
+
+.popular-item-4{
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-4.svg") no-repeat;
+  background-position: center;
+}
+
+.popular-item-5{
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-5.svg") no-repeat;
+  background-position: center;
+}
+
+.popular-item-6{
+  background:rgba(255, 204, 51, 0.5) url("../img/popular-6.svg") no-repeat;
+  background-position: center;
+}
+
+.popular h3{
+  margin-top: 5px;
+}
+
+.delivery{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background: #ccc;
+}
+
+.delivery-menu{
+  display: block;
+  position: relative;
+  float: left;
+  top: -20px;
+  width: 280px;
+}
+
+.delivery-menu::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: -80px;
+  right: 0;
+  width: 7px;
+  height: 320px;
+  background: #000;
+}
+
+.btn{
+  display: block;
+  position: relative;
+  width: 160px;
+  height: 8px;
+  border-top: 16px #ccc solid;
+  border-bottom: 16px #ccc solid;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  letter-spacing: 4px;
+  background: #ffcc33;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.btn:hover{
+  width: 280px;
+  background: #000;
+  border-top: 16px #000 solid;
+  border-bottom: 16px #000 solid;
+  color: #ffcc99;
+}
+
+.btn-active{
+  display: block;
+  position: relative;
+  width: 280px;
+  height: 8px;
+  border-top: 16px #000 solid;
+  border-bottom: 16px #000 solid;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  letter-spacing: 4px;
+  background: #000;
+  color: #ffcc99;
+  margin-bottom: 20px;
+}
+
+.btn-text{
+  display: block;
+  top: -7px;
+  left: 20px;
+  position: absolute;
+}
+
+.delivery-text{
+  float: right;
+  display: block;
+  position: relative;
+  width: 764px;
+  top: -70px;
+}
+
+.delivery-text::before{
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/delivery.png");
+  width: 136px;
+  height: 164px;
+  top: 55px;
+  right: 70px;
+}
+
+.delivery-text h2{
+  margin-bottom: 25px;
+}
+
+.delivery-text p{
+  line-height: 30px;
+}
+
+.logos{
+  margin-top: 90px;
+}
+
+.logo-dji,
+.logo-spgadgets,
+.logo-gopro,
+.logo-vive{
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 0;
+  width: 260px;
+  height: 100px;
+}
+
+.logo-dji{
+  background: url("../img/logo-dji.jpg");
+}
+
+.logo-spgadgets{
+  background: url("../img/logo-spgadgets.jpg");
+}
+
+.logo-gopro{
+  background: url("../img/logo-gopro.jpg");
+}
+
+.logo-vive{
+  background: url("../img/logo-vive.jpg");
+}
+
+.about-contacts{
+  margin-top: 90px;
+}
+
+.about,
+.contacts{
+  display: block;
+  position: relative;
+  float: left;
+  width: 50%;
+}
+
+.about::before,
+.contacts::before{
+  content: "";
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 7px;
+  background: #000;
+}
+
+.about li{
+  display: block;
+  position: relative;
+  font-family: "gilroyextrabold";
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 25px;
+}
+
+.about li::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: -25px;
+  width: 10px;
+  height: 10px;
+  background: url("../img/icon-indicator.png");
+}
+
+
+.map-mini{
+  display: block;
+  width: 560px;
+  height: 222px;
+  background: url("../img/map-mini.png") no-repeat;
+}
