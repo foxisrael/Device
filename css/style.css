@@ -166,17 +166,18 @@ a{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-header-user.svg");
+  background: url("../img/icon-header-user.png");
   width: 13px;
   height: 12px;
 }
 
 .header-icon-user:hover::before{
-  background: url("../img/icon-header-user-hover.svg");
+  background: url("../img/icon-header-user.png");
+  opacity: 0.6;
 }
 
 .header-icon-user:active::before{
-  background: url("../img/icon-header-user-hover.svg");
+  background: url("../img/icon-header-user.png");
   opacity: 0.3;
 }
 
@@ -186,17 +187,18 @@ a{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-header-compare.svg");
+  background: url("../img/icon-header-compare.png");
   width: 10px;
   height: 10px;
 }
 
 .header-icon-compare:hover::before{
-  background: url("../img/icon-header-compare-hover.svg");
+  background: url("../img/icon-header-compare.png");
+  opacity: 0.6;
 }
 
 .header-icon-compare:active::before{
-  background: url("../img/icon-header-compare-hover.svg");
+  background: url("../img/icon-header-compare.png");
   opacity: 0.3;
 }
 
@@ -206,17 +208,18 @@ a{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-header-cart.svg");
+  background: url("../img/icon-header-cart.png");
   width: 12px;
   height: 12px;
 }
 
 .header-icon-cart:hover::before{
-  background: url("../img/icon-header-cart-hover.svg");
+  background: url("../img/icon-header-cart.png");
+  opacity: 0.6;
 }
 
 .header-icon-cart:active::before{
-  background: url("../img/icon-header-cart-hover.svg");
+  background: url("../img/icon-header-cart.png");
   opacity: 0.3;
 }
 
@@ -348,11 +351,22 @@ a{
   content: "";
   display: block;
   position: absolute;
-  background: url("../img/icon-plus.svg") no-repeat;
-  top: 5px;
+  background: url("../img/icon-plus.png") no-repeat;
+  opacity: 0.3;
+  top: 3px;
   left: 230px;
   width: 16px;
   height: 16px;
+}
+
+.catalog-items:hover::before{
+  background: url("../img/icon-plus.png") no-repeat;
+  opacity: 0.2;
+}
+
+.catalog-items:active::before{
+  background: url("../img/icon-plus.png") no-repeat;
+  opacity: 0.1;
 }
 
 .popular{
@@ -377,92 +391,92 @@ a{
 }
 
 .item-1{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-1.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-1.png") no-repeat;
   background-position: center;
 }
 
 .item-1:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-1.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-1.png") no-repeat;
   background-position: center;
 }
 
 .item-1:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-1-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-1-active.png") no-repeat;
   background-position: center;
 }
 
 .item-2{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-2.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-2.png") no-repeat;
   background-position: center bottom;
 }
 
 .item-2:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-2.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-2.png") no-repeat;
   background-position: center bottom;
 }
 
 .item-2:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-2-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-2-active.png") no-repeat;
   background-position: center bottom;
 }
 
 .item-3{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-3.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-3.png") no-repeat;
   background-position: center;
 }
 
 .item-3:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-3.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-3.png") no-repeat;
   background-position: center;
 }
 
 .item-3:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-3-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-3-active.png") no-repeat;
   background-position: center;
 }
 
 .item-4{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-4.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-4.png") no-repeat;
   background-position: center;
 }
 
 .item-4:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-4.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-4.png") no-repeat;
   background-position: center;
 }
 
 .item-4:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-4-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-4-active.png") no-repeat;
   background-position: center;
 }
 
 .item-5{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-5.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-5.png") no-repeat;
   background-position: center;
 }
 
 .item-5:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-5.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-5.png") no-repeat;
   background-position: center;
 }
 
 .item-5:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-5-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-5-active.png") no-repeat;
   background-position: center;
 }
 
 .item-6{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-6.svg") no-repeat;
+  background: rgba(255, 204, 51, 0.5) url("../img/popular-6.png") no-repeat;
   background-position: center;
 }
 
 .item-6:hover{
-  background: rgba(255, 204, 51, 1) url("../img/popular-6.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-6.png") no-repeat;
   background-position: center;
 }
 
 .item-6:active{
-  background: rgba(255, 204, 51, 1) url("../img/popular-6-active.svg") no-repeat;
+  background: rgba(255, 204, 51, 1) url("../img/popular-6-active.png") no-repeat;
   background-position: center;
 }
 
@@ -759,11 +773,18 @@ footer p{
 
 .footer-user{
   float: right;
+  text-align: right;
+}
+
+.footer-user p{
+  display: block;
+  margin-top: 37px;
 }
 
 .footer-menu a{
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 35px;
+  margin-top: 75px;
   font-family: "gilroyextrabold";
   font-size: 18px;
   letter-spacing: 4px;
@@ -782,7 +803,9 @@ footer p{
   margin-right: 0;
 }
 
-.footer-user a{
+.footer-icon-user,
+.footer-icon-compare,
+.footer-icon-cart{
   display: inline-block;
   position: relative;
   margin-left: 30px;
@@ -793,15 +816,19 @@ footer p{
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-user a:last-child{
+.footer-icon-cart{
   margin-right: 0;
 }
 
-.footer-user a:hover{
+.footer-icon-user:hover,
+.footer-icon-compare:hover,
+.footer-icon-cart:hover{
   color: rgba(255, 255, 255, 1);
 }
 
-.footer-user a:active{
+.footer-icon-user:active,
+.footer-icon-compare:active,
+.footer-icon-cart:active{
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -811,17 +838,17 @@ footer p{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-footer-user.svg");
+  background: url("../img/icon-footer-user.png");
   width: 13px;
   height: 12px;
 }
 
 .footer-icon-user:hover::before{
-  background: url("../img/icon-footer-user-hover.svg");
+  background: url("../img/icon-footer-user-hover.png");
 }
 
 .footer-icon-user:active::before{
-  background: url("../img/icon-footer-user-hover.svg");
+  background: url("../img/icon-footer-user-hover.png");
   opacity: 0.3;
 }
 
@@ -831,17 +858,17 @@ footer p{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-footer-compare.svg");
+  background: url("../img/icon-footer-compare.png");
   width: 10px;
   height: 10px;
 }
 
 .footer-icon-compare:hover::before{
-  background: url("../img/icon-footer-compare-hover.svg");
+  background: url("../img/icon-footer-compare-hover.png");
 }
 
 .footer-icon-compare:active::before{
-  background: url("../img/icon-footer-compare-hover.svg");
+  background: url("../img/icon-footer-compare-hover.png");
   opacity: 0.3;
 }
 
@@ -851,17 +878,17 @@ footer p{
   position: absolute;
   top: 13px;
   left: -25px;
-  background: url("../img/icon-footer-cart.svg");
+  background: url("../img/icon-footer-cart.png");
   width: 12px;
   height: 12px;
 }
 
 .footer-icon-cart:hover::before{
-  background: url("../img/icon-footer-cart-hover.svg");
+  background: url("../img/icon-footer-cart-hover.png");
 }
 
 .footer-icon-cart:active::before{
-  background: url("../img/icon-footer-cart-hover.svg");
+  background: url("../img/icon-footer-cart-hover.png");
   opacity: 0.3;
 }
 
@@ -871,10 +898,19 @@ footer p{
     clear: both;
 }
 
+.footer-bottom{
+  margin-top: 40px;
+}
+
+.footer-soc-btn{
+  margin: 0 auto;
+}
+
 .fb{
   display: inline-block;
   width: 39px;
   height: 38px;
+  margin-right: 15px;
   background: url("../img/icon-fb.png") no-repeat;
   opacity: 0.3;
 }
@@ -883,6 +919,7 @@ footer p{
   display: inline-block;
   width: 39px;
   height: 38px;
+  margin-right: 15px;
   background: url("../img/icon-inst.png") no-repeat;
   opacity: 0.3;
 }
@@ -908,7 +945,8 @@ footer p{
 }
 
 .htmlacademy{
-  display: inline-block;
+  display: block;
+  float: right;
   width: 27px;
   height: 34px;
   background: url("../img/icon-htmlacademy.png") no-repeat;
