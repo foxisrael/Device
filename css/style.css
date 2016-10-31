@@ -73,7 +73,6 @@ a{
 
 .header-main{
   margin-top: 20px;
-  margin-bottom: 485px;
   width: 100%;
   height: 210px;
   padding: 50px 0 40px;
@@ -99,7 +98,7 @@ a{
     display: block;
     position: relative;
     float: left;
-    margin-right: 310px;
+    margin-right: 340px;
 }
 
 .form-find::before {
@@ -135,8 +134,6 @@ a{
 .header-user a{
   display: inline-block;
   position: relative;
-  margin-left: 30px;
-  margin-right: 25px;
   font-family: "opensanslight";
   font-size: 15px;
   line-height: 36px;
@@ -156,7 +153,11 @@ a{
 }
 
 .header-icon-user{
-  margin-right: 20px;
+  margin-right: 257px;
+}
+
+.header-icon-compare{
+  margin-right: 45px;
 }
 
 .header-icon-user::before{
@@ -242,6 +243,49 @@ a{
 
 .header-menu a:last-child{
   margin-right: 0;
+}
+
+.slider{
+  padding-left: 90px;
+  position: relative;
+  top: -110px;
+}
+
+.slider-photo{
+  float: left;
+  margin-right: 120px;
+  background: url("../img/slide-1.png") no-repeat;
+  width: 384px;
+  height: 486px;
+}
+
+.slider-text{
+  position: relative;
+  top: 45px;
+  float: left;
+}
+
+.slider-text b{
+  position: absolute;
+  top: -60px;
+  right: -15px;
+  font-family: "gilroyextrabold";
+  font-size: 180px;
+  line-height: 180px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.slider-text-details span{
+  font-family: "gilroylight";
+  font-size: 36px;
+  line-height: 55px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.slider-text-details p{
+  font-size: 13px;
+  display: inline-block;
+  margin-right: 80px;
 }
 
 .catalog-items{
@@ -422,10 +466,10 @@ a{
 }
 
 .btn{
-  display: block;
-  position: relative;
-  width: 160px;
+  display: inline-block;
+  width: 100px;
   height: 8px;
+  padding: 0 30px;
   border-top: 16px #ccc solid;
   border-bottom: 16px #ccc solid;
   text-align: center;
@@ -433,70 +477,75 @@ a{
   font-family: "gilroyextrabold";
   font-size: 18px;
   letter-spacing: 4px;
-  background: #ffcc33;
-  color: #000;
+  line-height: 7px;
+  background: rgba(255, 204, 51, 1);
+  color: rgba(0, 0, 0, 1);
   margin-bottom: 20px;
 }
 
-.btn-white{
-  width: 260px;
-  border-top: 16px #fff solid;
-  border-bottom: 16px #fff solid;
-}
-
 .btn:hover{
-  width: 160px;
-  background: #ffcc33;
-  border-top: 16px #ffcc33 solid;
-  border-bottom: 16px #ffcc33 solid;
-  color: #000;
-}
-
-.btn-white:hover{
-  width: 260px;
-  border-top: 16px #ffcc33 solid;
-  border-bottom: 16px #ffcc33 solid;
-  color: #000;
+  border-top: 16px rgba(255, 204, 51, 1) solid;
+  border-bottom: 16px rgba(255, 204, 51, 1) solid;
 }
 
 .btn:active{
-  width: 280px;
-  background: #000;
-  border-top: 16px #000 solid;
-  border-bottom: 16px #000 solid;
-  color: #ffcc99;
-}
-
-.btn-white:active{
-  width: 260px;
-  background: #000;
-  border-top: 16px #000 solid;
-  border-bottom: 16px #000 solid;
-  color: #ffcc99;
+  width: 250px;
+  padding-left: 30px;
+  text-align: left;
+  border-top: 16px rgba(0, 0, 0, 1) solid;
+  border-bottom: 16px rgba(0, 0, 0, 1) solid;
+  background: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .btn-active{
   display: block;
-  position: relative;
-  width: 280px;
+  width: 250px;
   height: 8px;
-  border-top: 16px #000 solid;
-  border-bottom: 16px #000 solid;
-  text-align: center;
   text-transform: uppercase;
   font-family: "gilroyextrabold";
   font-size: 18px;
   letter-spacing: 4px;
-  background: #000;
-  color: #ffcc99;
+  line-height: 10px;
+  margin-bottom: 20px;
+  padding: 0 0 0 30px;
+  text-align: left;
+  border-top: 16px rgba(0, 0, 0, 1) solid;
+  border-bottom: 16px rgba(0, 0, 0, 1) solid;
+  background: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.btn-white{
+  display: inline-block;
+  height: 8px;
+  padding: 0 30px;
+  border-top: 16px rgba(255, 255, 255, 1) solid;
+  border-bottom: 16px rgba(255, 255, 255, 1) solid;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 7px;
+  background: rgba(255, 204, 51, 1);
+  color: rgba(0, 0, 0, 1);
   margin-bottom: 20px;
 }
 
-.btn-text{
-  display: block;
-  top: -7px;
-  left: 20px;
-  position: absolute;
+.btn-white:hover{
+  border-top: 16px rgba(255, 204, 51, 1) solid;
+  border-bottom: 16px rgba(255, 204, 51, 1) solid;
+}
+
+.btn-white:active{
+  width: 250px;
+  padding-left: 30px;
+  text-align: left;
+  border-top: 16px rgba(0, 0, 0, 1) solid;
+  border-bottom: 16px rgba(0, 0, 0, 1) solid;
+  background: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .delivery-text{
@@ -576,6 +625,10 @@ a{
 
 .about-contacts{
   margin-top: 90px;
+}
+
+.about a{
+  margin-top: 25px;
 }
 
 .about,
