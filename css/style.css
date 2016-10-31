@@ -77,51 +77,21 @@ a{
 
 .popular-item{
   display: inline-block;
+  width: 160px;
+  height: 160px;
   vertical-align: top;
   margin-right: 35px;
+  background-color: rgba(255, 204, 51, 0.5);
 }
 
 .popular-item:last-child{
   margin-right: 0;
 }
 
-.popular-item-1,
-.popular-item-2,
-.popular-item-3,
-.popular-item-4,
-.popular-item-5,
-.popular-item-6{
-  width: 160px;
-  height: 160px;
-}
-
-.popular-item-1{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-1.svg") no-repeat;
-  background-position: center;
-}
-
-.popular-item-2{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-2.svg") no-repeat;
-  background-position: center bottom;
-}
-
-.popular-item-3{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-3.svg") no-repeat;
-  background-position: center;
-}
-
-.popular-item-4{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-4.svg") no-repeat;
-  background-position: center;
-}
-
-.popular-item-5{
-  background: rgba(255, 204, 51, 0.5) url("../img/popular-5.svg") no-repeat;
-  background-position: center;
-}
-
-.popular-item-6{
-  background:rgba(255, 204, 51, 0.5) url("../img/popular-6.svg") no-repeat;
+.item-1{
+  background-image: url("../img/popular-1.svg") no-repeat;
+  width: 97px;
+  height: 55px;
   background-position: center;
 }
 
