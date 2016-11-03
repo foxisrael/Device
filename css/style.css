@@ -261,6 +261,13 @@ a{
   background: #fff;
 }
 
+.slider-text{
+  float: left;
+  position: relative;
+  top: 45px;
+  width: 566px;
+}
+
 .slider h1{
   z-index: 1;
   margin-bottom: 18px;
@@ -314,12 +321,6 @@ a{
   height: 334px;
 }
 
-.slider-text{
-  position: relative;
-  top: 45px;
-  float: left;
-}
-
 .slider-text b{
   position: absolute;
   font-family: "gilroyextrabold";
@@ -330,7 +331,7 @@ a{
 
 .slider-1 b{
   top: -60px;
-  right: 0px;
+  right: 45px;
 }
 
 .slider-2 b{
@@ -345,6 +346,7 @@ a{
 
 .slider-text-details{
   margin-top: 10px;
+  width: 566px;
 }
 
 .slider-text-details span{
@@ -357,7 +359,12 @@ a{
 .slider-text-details p{
   font-size: 13px;
   display: inline-block;
+  vertical-align: top;
   margin-right: 80px;
+}
+
+.slider-text-details p:last-child{
+  margin-right: 0;
 }
 
 .catalog-items{
@@ -402,15 +409,11 @@ a{
 .item-4,
 .item-5,
 .item-6{
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  float: left;
   width: 160px;
   height: 160px;
-  margin-right: 35px;
-}
-
-.item-6{
-  margin-right: 0;
+  margin-right: 40px;
 }
 
 .item-1{
@@ -491,6 +494,7 @@ a{
 .item-6{
   background: rgba(255, 204, 51, 0.5) url("../img/popular-6.png") no-repeat;
   background-position: center;
+  margin-right: 0;
 }
 
 .item-6:hover{
@@ -671,7 +675,7 @@ a{
 
 .logo-dji{
   background: url("../img/logo-dji.jpg");
-  margin-right: 38px;
+  margin-right: 30px;
 }
 
 .logo-dji:hover{
@@ -680,7 +684,7 @@ a{
 
 .logo-spgadgets{
   background: url("../img/logo-spgadgets.jpg");
-  margin-right: 38px;
+  margin-right: 30px;
 }
 
 .logo-spgadgets:hover{
@@ -809,9 +813,30 @@ footer p{
 .footer-left,
 .footer-centr,
 .footer-right{
-  display: inline-block;
+  display: block;
+  float: left;
   position: relative;
   vertical-align: top;
+}
+
+.footer-left{
+  width: 210px;
+  margin-right: 140px;
+  text-align: left;
+}
+
+.footer-centr{
+  width: 460px;
+  margin-top: 73px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.footer-right{
+  width: 335px;
+  float: right;
+  text-align: right;
+  margin-top: -5px;
 }
 
 .footer-logo::before{
@@ -822,22 +847,6 @@ footer p{
   height: 8px;
   background: rgba(247, 225, 132, 1);
   top: 170px;
-}
-
-.footer-left{
-  margin-right: 160px;
-  text-align: left;
-}
-
-.footer-centr{
-  margin-top: 73px;
-  margin-right: 40px;
-  text-align: center;
-}
-
-.footer-right{
-  text-align: right;
-  margin-top: -5px;
 }
 
 .footer-user p{
