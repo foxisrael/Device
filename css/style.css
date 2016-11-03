@@ -559,8 +559,16 @@ a{
 }
 
 .btn:active{
+  display: block;
   width: 250px;
-  padding-left: 30px;
+  height: 8px;
+  text-transform: uppercase;
+  font-family: "gilroyextrabold";
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 10px;
+  margin-bottom: 25px;
+  padding: 0 0 0 30px;
   text-align: left;
   border-top: 16px rgba(0, 0, 0, 1) solid;
   border-bottom: 16px rgba(0, 0, 0, 1) solid;
