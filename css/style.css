@@ -371,6 +371,7 @@ a{
   display: block;
   position: relative;
   padding-right: 285px;
+  width: 830px;
 }
 
 .garanty{
@@ -1031,4 +1032,100 @@ footer p{
 .htmlacademy:active{
   background: url("../img/icon-htmlacademy-hover.png") no-repeat;
   opacity: 0.3;
+}
+
+
+/* CATALOG */
+.sorting{
+  height: 10px;
+  padding: 10px 0px 10px 340px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.sorting-text,
+.sorting-arrows{
+  display: block;
+  float: left;
+  vertical-align: top;
+}
+
+.sorting-arrows{
+}
+
+.sorting b{
+  display: inline-block;
+  vertical-align: top;
+  font-family: "gilroyextrabold";
+  font-size: 16px;
+  margin-right: 55px;
+  margin-top: -3px;
+}
+
+.sorting-text a,
+.sorting-text p{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+  font-family: "opensanslight";
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  margin-top: -3px;
+}
+
+.sorting-text a:hover{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-text a:active{
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting-text p{
+  font-family: "opensans";
+}
+
+.arrow-up{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+  background: url("../img/icon-arrow-up.png") no-repeat;
+  width: 17px;
+  height: 9px;
+}
+
+.arrow-down{
+  display: inline-block;
+  vertical-align: top;
+  background: url("../img/icon-arrow-down.png") no-repeat;
+  width: 17px;
+  height: 9px;
+}
+
+.items-header h3{
+  margin-top: 390px;
+}
+
+.filter{
+  width: 330px;
+  float: left;
+}
+
+.catalog-item-1,
+.catalog-item-2{
+  display: block;
+  float: left;
+  width: 360px;
+  height: 380px;
+  margin-right: 40px;
+}
+
+.catalog-item-1{
+  background: url("../img/item-1.jpg") no-repeat;
+}
+
+.catalog-item-2{
+  background: url("../img/item-2.jpg") no-repeat;
+  margin-right: 0;
 }
