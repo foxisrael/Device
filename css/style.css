@@ -1036,19 +1036,16 @@ footer p{
 
 /* CATALOG */
 .sorting{
+  width: 100%;
   height: 10px;
-  padding: 10px 0px 10px 340px;
+  padding: 10px 0;
   background: rgba(0, 0, 0, 0.08);
 }
 
 .sorting-text,
 .sorting-arrows{
-  display: block;
-  float: left;
+  display: inline-block;
   vertical-align: top;
-}
-
-.sorting-arrows{
 }
 
 .sorting b{
@@ -1102,148 +1099,22 @@ footer p{
   height: 9px;
 }
 
-.items-header h3,
-.items-footer h3{
-  margin-top: 390px;
-}
-
-.catalog-item-1,
-.catalog-item-2{
-  display: block;
-  float: left;
-  width: 360px;
-  height: 380px;
-  margin-right: 40px;
-}
-
-.catalog-item-1{
-  background: url("../img/item-1.jpg") no-repeat;
-}
-
-.catalog-item-2{
-  background: url("../img/item-2.jpg") no-repeat;
-  margin-right: 0;
-}
 
 /*FILTER*/
 .filter {
+    display: block;
     float: left;
     width: 220px;
-    margin-right: 20px;
+    margin-right: 75px;
+    background: rgba(0, 0, 0, 0.08);
 }
 
 .filter b {
     display: block;
-    background: #f7f3ec;
     font-size: 13px;
     font-family: "PT Sans";
     line-height: 18px;
     padding: 10px 0 10px 18px;
-}
-
-.sorting {
-    display: block;
-    background: #f7f3ec;
-    font-size: 13px;
-    font-family: "PT Sans";
-    line-height: 18px;
-    padding: 7px 20px 7px 18px;
-    margin-bottom: 20px;
-}
-
-.sorting a, .sorting p {
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.sorting a {
-    margin-right: 50px;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.sorting a:hover {
-    margin-right: 50px;
-    color: rgba(0, 0, 0, 1);
-}
-
-.sorting a:active {
-    margin-right: 50px;
-    color: #ee3643;
-}
-
-.sorting-price-active {
-    margin-right: 50px;
-    color: #ee3643;
-}
-
-.sorting p {
-    margin-right: 140px;
-}
-
-.catalog h2, .catalog h2 {
-    font-family: "PT Sans";
-    text-transform: uppercase;
-}
-
-.sorting-up {
-    float: right;
-    background: url("../img/icon-up.png");
-    background-repeat: no-repeat;
-    position: relative;
-    top: 7px;
-    padding-right: 10px;
-    width: 11px;
-    height: 10px;
-}
-
-.sorting-up:hover {
-    background: url("../img/icon-up-hover.png");
-    background-repeat: no-repeat;
-    padding-right: 10px;
-    position: relative;
-    top: 7px;
-    width: 11px;
-    height: 10px;
-}
-
-.sorting-up:active {
-    background: url("../img/icon-up-active.png");
-    background-repeat: no-repeat;
-    padding-right: 10px;
-    position: relative;
-    top: 7px;
-    width: 11px;
-    height: 10px;
-}
-
-.sorting-down {
-    float: right;
-    background: url("../img/icon-down.png");
-    background-repeat: no-repeat;
-    position: relative;
-    top: 7px;
-    width: 11px;
-    height: 10px;
-}
-
-.sorting-down:hover {
-    background: url("../img/icon-down-hover.png");
-    background-repeat: no-repeat;
-    position: relative;
-    top: 7px;
-    width: 11px;
-    height: 10px;
-}
-
-.sorting-down:active {
-    background: url("../img/icon-down-active.png");
-    background-repeat: no-repeat;
-    position: relative;
-    top: 7px;
-    width: 11px;
-    height: 10px;
 }
 
 .range-filter {
@@ -1491,4 +1362,33 @@ button:active{
   border-bottom: 16px rgba(0, 0, 0, 1) solid;
   background: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
+}
+
+
+/*CATALOG-ITEMS*/
+.catalog{
+  display: block;
+  padding-top: 70px;
+}
+
+.items-header h3{
+  margin-top: 390px;
+}
+
+.catalog-item-1,
+.catalog-item-2{
+  display: block;
+  float: left;
+  width: 360px;
+  height: 380px;
+  margin-right: 40px;
+}
+
+.catalog-item-1{
+  background: url("../img/item-1.jpg") no-repeat;
+}
+
+.catalog-item-2{
+  background: url("../img/item-2.jpg") no-repeat;
+  margin-right: 0;
 }
