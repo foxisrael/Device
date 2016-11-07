@@ -1068,11 +1068,15 @@ footer p {
 /*FILTER*/
 
 .filter {
-    display: block;
-    float: left;
     width: 220px;
     margin-right: 75px;
     background: rgba(0, 0, 0, 0.08);
+}
+
+.catalog {
+    display: block;
+    float: right;
+    padding-top: 70px;
 }
 
 .filter b {
@@ -1333,19 +1337,14 @@ button:active {
 
 /*CATALOG-ITEMS*/
 
-.catalog {
-    display: block;
-    padding-top: 70px;
-}
-
-.items h3 {
+.catalog h3 {
     display: inline-block;
     vertical-align: top;
     margin-top: 390px;
     font-size: 18px;
 }
 
-.items p {
+.catalog p {
     display: inline-block;
     vertical-align: top;
     float: right;
@@ -1386,30 +1385,33 @@ button:active {
 .paginator{
   display:block;
   float: right;
-  width: 745px;
-  height: 20px;
-  padding: 10px;
+  width: 700px;
+  height: 10px;
+  padding: 30px;
   background: rgba(0, 0, 0, 0.08);
 }
 
 .paginator a{
-      display: inline-block;
-      vertical-align: top;
-      font-family: "gilroyextrabold";
-      font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "gilroyextrabold";
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: 4px;
 }
 
 .paginator-left{
   display: inline-block;
-  text-align: left;
+  margin-right: 240px;
 }
 
 .paginator-right{
   display: inline-block;
-text-align: right;
+  float: right;
 }
 
 .paginator-center{
-  display: block;
-  text-align: center;
+  display: inline-block;
+  margin-right: 240px;
 }
