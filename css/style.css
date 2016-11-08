@@ -1068,15 +1068,19 @@ footer p {
 /*FILTER*/
 
 .filter {
-    width: 220px;
-    margin-right: 75px;
-    background: rgba(0, 0, 0, 0.08);
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 330px;
+  background: rgba(0, 0, 0, 0.08);
 }
 
 .catalog {
-    display: block;
-    float: right;
-    padding-top: 70px;
+  display: inline-block;
+  vertical-align: top;
+  width: 800px;
+  padding-top: 70px;
+  float: right;
 }
 
 .filter b {
