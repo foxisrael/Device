@@ -809,9 +809,10 @@ a {
 }
 
 footer {
+    width: 100%;
     height: 200px;
     margin-top: 60px;
-    background: #464646;
+    background: rgba(68, 68, 68, 1);
     padding: 65px 0 60px;
 }
 
@@ -835,13 +836,13 @@ footer p {
 .footer-left, .footer-centr, .footer-right {
     display: block;
     float: left;
-    position: relative;
     vertical-align: top;
 }
 
 .footer-left {
     width: 210px;
     margin-right: 140px;
+    position: relative;
     text-align: left;
 }
 
@@ -854,7 +855,6 @@ footer p {
 
 .footer-right {
     width: 335px;
-    float: right;
     text-align: right;
     margin-top: -5px;
 }
@@ -869,7 +869,7 @@ footer p {
     top: 170px;
 }
 
-.footer-user p {
+.footer-right p {
     display: block;
     margin-top: 40px;
 }
@@ -919,8 +919,8 @@ footer p {
 .footer-icon-user::before {
     content: "";
     display: block;
-    position: absolute;
-    top: 13px;
+    position: relative;
+    top: 23px;
     left: -25px;
     background: url("../img/icon-footer-user.png");
     width: 13px;
@@ -939,8 +939,8 @@ footer p {
 .footer-icon-compare::before {
     content: "";
     display: block;
-    position: absolute;
-    top: 13px;
+    position: relative;
+    top: 23px;
     left: -25px;
     background: url("../img/icon-footer-compare.png");
     width: 10px;
@@ -959,8 +959,8 @@ footer p {
 .footer-icon-cart::before {
     content: "";
     display: block;
-    position: absolute;
-    top: 13px;
+    position: relative;
+    top: 23px;
     left: -25px;
     background: url("../img/icon-footer-cart.png");
     width: 12px;
@@ -974,12 +974,6 @@ footer p {
 .footer-icon-cart:active::before {
     background: url("../img/icon-footer-cart-hover.png");
     opacity: 0.3;
-}
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .footer-bottom {
@@ -1089,30 +1083,18 @@ footer p {
     width: 100%;
     height: 10px;
     padding: 30px 0;
-    padding-left: 400px;
     background: rgba(0, 0, 0, 0.08);
 }
 
-.sorting-text, .sorting-arrows {
+.sorting-text {
     display: block;
     float: left;
+    margin-left: 400px;
 }
 
-.sorting-text {
-    margin-right: 170px;
-}
-
-.filter-header {
-    display: block;
-    position: relative;
-    right: 0;
-    width: 100%;
-    height: 10px;
-    padding: 30px 0;
-    font-family: "gilroyextrabold";
-    font-size: 16px;
-    letter-spacing: 4px;
-    background: rgba(220, 220, 220, 1);
+.sorting-arrows{
+  display: block;
+  float: right;
 }
 
 .sorting b {
@@ -1172,13 +1154,30 @@ footer p {
 .filter {
     display: inline-block;
     vertical-align: top;
-    position: absolute;
-    top: -70px;
-    right: 840px;
+    position: relative;
     width: 270px;
-    padding-left: 60px;
     background: rgba(0, 0, 0, 0.08);
     z-index: 2;
+}
+
+.filter-content{
+  display: block;
+  position: absolute;
+  top: -70px;
+  width: 270px;
+  padding-left: 60px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.filter-header {
+    display: block;
+    width: 100%;
+    height: 10px;
+    padding: 30px 0;
+    font-family: "gilroyextrabold";
+    font-size: 16px;
+    letter-spacing: 4px;
+    background: rgba(220, 220, 220, 1);
 }
 
 .catalog {
@@ -1523,4 +1522,10 @@ button:active {
 .paginator-center {
     display: inline-block;
     margin-right: 240px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
