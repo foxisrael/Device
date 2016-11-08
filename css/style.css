@@ -71,18 +71,26 @@ a {
     background: rgba(255, 204, 51, 0.5);
 }
 
-.header-main h1 {
+.header-main-inside {
+    margin-top: 30px;
+    width: 100%;
+    height: 95px;
+    padding: 50px 0 40px;
+    background: rgba(255, 204, 51, 0.5);
+}
+
+.header-main h1, .header-main-inside h1 {
     padding-left: 55px;
     margin: 0;
     position: absolute;
     top: 0;
 }
 
-.header-main h1:hover {
+.header-main h1:hover, .header-main-inside h1:hover {
     color: rgba(51, 51, 51, 1);
 }
 
-.header-main h1:active {
+.header-main h1:active, .header-main-inside h1:active {
     color: rgba(102, 102, 102, 1);
 }
 
@@ -145,8 +153,23 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.header-main-inside span {
+    display: inline-block;
+    position: relative;
+    font-family: "opensanslight";
+    font-size: 15px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 1);
+    margin-right: 10px;
+}
+
 .header-icon-user {
     margin-right: 240px;
+}
+
+.header-main-inside .header-icon-user {
+    margin-right: 100px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .header-icon-compare {
@@ -170,6 +193,27 @@ a {
 }
 
 .header-icon-user:active::before {
+    background: url("../img/icon-header-user.png");
+    opacity: 0.3;
+}
+
+.header-main-inside .header-icon-user::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: -165px;
+    background: url("../img/icon-header-user.png");
+    width: 13px;
+    height: 12px;
+}
+
+.header-main-inside .header-icon-user:hover::before {
+    background: url("../img/icon-header-user.png");
+    opacity: 0.6;
+}
+
+.header-main-inside .header-icon-user:active::before {
     background: url("../img/icon-header-user.png");
     opacity: 0.3;
 }
@@ -1002,16 +1046,73 @@ footer p {
 
 /* CATALOG */
 
+.breadcrumbs {
+    padding-left: 60px;
+    margin-bottom: 40px;
+}
+
+.breadcrumbs h1 {
+    margin-bottom: 12px;
+}
+
+.breadcrumbs a {
+    display: inline-block;
+    font-family: "opensanslight";
+    position: relative;
+    font-size: 14px;
+    line-height: 36px;
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-arrow {
+    display: block;
+    left: 10px;
+    top: -1px;
+    background: url("../img/icon-nav-arrow.png");
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    margin-right: 20px;
+}
+
+.breadcrumbs span {
+    display: inline-block;
+    position: relative;
+    font-family: "opensanslight";
+    font-size: 14px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
 .sorting {
     width: 100%;
     height: 10px;
-    padding: 10px 0;
+    padding: 30px 0;
+    padding-left: 400px;
     background: rgba(0, 0, 0, 0.08);
 }
 
 .sorting-text, .sorting-arrows {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
+    float: left;
+}
+
+.sorting-text {
+    margin-right: 170px;
+}
+
+.filter-header {
+    display: block;
+    position: relative;
+    right: 0;
+    width: 100%;
+    height: 10px;
+    padding: 30px 0;
+    font-family: "gilroyextrabold";
+    font-size: 16px;
+    letter-spacing: 4px;
+    background: rgba(220, 220, 220, 1);
 }
 
 .sorting b {
@@ -1019,6 +1120,7 @@ footer p {
     vertical-align: top;
     font-family: "gilroyextrabold";
     font-size: 16px;
+    letter-spacing: 4px;
     margin-right: 55px;
     margin-top: -3px;
 }
@@ -1068,27 +1170,24 @@ footer p {
 /*FILTER*/
 
 .filter {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  width: 330px;
-  background: rgba(0, 0, 0, 0.08);
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: -70px;
+    right: 840px;
+    width: 270px;
+    padding-left: 60px;
+    background: rgba(0, 0, 0, 0.08);
+    z-index: 2;
 }
 
 .catalog {
-  display: inline-block;
-  vertical-align: top;
-  width: 800px;
-  padding-top: 70px;
-  float: right;
-}
-
-.filter b {
-    display: block;
-    font-size: 13px;
-    font-family: "PT Sans";
-    line-height: 18px;
-    padding: 10px 0 10px 18px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 800px;
+    padding-top: 70px;
+    float: right;
 }
 
 .range-filter {
@@ -1102,7 +1201,7 @@ footer p {
     height: 80px;
     position: relative;
     padding: 0px 20px;
-    background: #f7f3ec;
+    background: inherit;
     border-radius: 5px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -1152,7 +1251,7 @@ footer p {
 
 .price-controls input {
     border: none;
-    background: #f7f3ec;
+    background: inherit;
     padding: 12px 10px 14px 10px;
     font-weight: normal;
     width: 75px;
@@ -1348,6 +1447,10 @@ button:active {
     font-size: 18px;
 }
 
+.filter h3 {
+    margin-top: 0;
+}
+
 .catalog p {
     display: inline-block;
     vertical-align: top;
@@ -1385,37 +1488,39 @@ button:active {
     margin-bottom: 70px;
 }
 
+
 /*PAGINATOR*/
-.paginator{
-  display:block;
-  float: right;
-  width: 700px;
-  height: 10px;
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.08);
+
+.paginator {
+    display: block;
+    float: right;
+    width: 700px;
+    height: 10px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.08);
 }
 
-.paginator a{
-  display: inline-block;
-  vertical-align: top;
-  font-family: "gilroyextrabold";
-  font-size: 16px;
-  line-height: 16px;
-  color: rgba(0, 0, 0, 1);
-  letter-spacing: 4px;
+.paginator a {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "gilroyextrabold";
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 4px;
 }
 
-.paginator-left{
-  display: inline-block;
-  margin-right: 240px;
+.paginator-left {
+    display: inline-block;
+    margin-right: 240px;
 }
 
-.paginator-right{
-  display: inline-block;
-  float: right;
+.paginator-right {
+    display: inline-block;
+    float: right;
 }
 
-.paginator-center{
-  display: inline-block;
-  margin-right: 240px;
+.paginator-center {
+    display: inline-block;
+    margin-right: 240px;
 }
